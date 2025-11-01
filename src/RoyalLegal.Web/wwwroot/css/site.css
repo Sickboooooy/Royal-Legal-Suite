@@ -1,0 +1,117 @@
+/* Custom styles for Royal Legal Suite */
+
+html {
+  font-size: 14px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+  margin-top: auto;
+}
+
+/* Custom card styling */
+.card {
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Navigation styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+/* Button styling */
+.btn {
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Alert styling */
+.alert {
+  border-radius: 10px;
+  border: none;
+}
+
+/* Text colors */
+.text-primary { color: #0d6efd !important; }
+.text-success { color: #198754 !important; }
+.text-info { color: #0dcaf0 !important; }
+.text-warning { color: #ffc107 !important; }
+.text-danger { color: #dc3545 !important; }
+.text-secondary { color: #6c757d !important; }
+
+/* Background gradients */
+.bg-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Icon styling */
+.fas, .fa {
+  margin-right: 0.5rem;
+}
+
+/* Page title styling */
+.display-4 {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+/* Stats section */
+.alert-info {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border: none;
+  color: #1565c0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+}
